@@ -1,70 +1,127 @@
-# Getting Started with Create React App
+# 📱Instagram React Clone⚛️ 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This React version is an evolution of a previous static HTML/CSS Instagram clone, available at `https://github.com/ClaraDev01/Projeto-Instagram`
+It has been rewritten using React components and includes the new requirements of the current project.
 
-## Available Scripts
 
-In the project directory, you can run:
+## 🚀 Technologies Used
 
-### `npm start`
+- **React** (using `create-react-app`) — Main framework for component-based architecture
+- **JavaScript** — Logic, state handling, and interactive behavior
+- **HTML5** — Markup and structure
+- **CSS3** — Styling and layout
+- **Git & GitHub** — Version control and deployment
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🎯 *Requirements Met*
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- ✅ Created with:
+    ```
+    npx create-react-app project-name --template @driven-education/cra-template
+    ```
+    ensuring `package.json` and `package-lock.json` are in the root directory.
+- ✅ Proper componentization:
+    - Stories, Posts, and Suggestions are rendered from **object arrays** using `.map()`.
+- ✅ Dynamic user interactions:
+    - Change username via a prompt.
+    - Change profile picture via a prompt.
+    - Save and unsave posts by clicking the save icon.
+    - Like and unlike posts by clicking the heart icon.
+    - Click the post image itself to like it.
+    - Likes counter increases or decreases based on user interaction.
+    - Each post maintains its own state (no global state for likes/saves).
+- ✅ **Correct Project Structure**:
+    - All images reside in `public/assets`.
+    - All components reside within `src/components`.
+    - Styles reside in `public`.
+- ✅ No mobile layout required — desktop layout only.
+- ✅ Pure React syntax with componentization, making future enhancements and maintenance seamless.
 
-### `npm test`
+## 📌 Project Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+📂 Projeto-Instagram-React
+├── 📄 .gitignore
+├── 📄 package.json
+├── 📄 package-lock.json
+├── 📂 public
+│   ├── 📄 index.html
+│   ├── 📄 reset.css
+│   ├── 📄 style.css
+│   └── 📂 assets
+│        └── 📂 img
+│            ├── 📄 9gag.svg
+│            ├── 📄 adorable_animals.svg
+│            ├── 📄 bad_vibes.memes.svg
+│            ├── 📄 barked.svg
+│            ├── 📄 catanacomics.svg
+│            ├── 📄 chibirdart.svg
+│            ├── 📄 dog.svg
+│            ├── 📄 filomoderna.svg
+│            ├── 📄 gato-telefone.svg
+│            ├── 📄 logo.png
+│            ├── 📄 memenagourmet.svg
+│            ├── 📄 meowed.svg
+│            ├── 📄 nathanwpylestrangepian.svg
+│            ├── 📄 razoesparaacreditar.svg
+│            ├── 📄 respondeai.svg
+│            ├── 📄 smallcutecats.svg
+│            ├── 📄 stories_background.jpg
+│            ├── 📄 story-circle.svg
+│            └── 📄 wawawicomics.svg
+├── 📂 src
+│   ├── 📄 App.js
+│   ├── 📄 Body.js
+│   ├── 📄 index.js
+│   ├── 📄 NavBar.js
+│   ├── 📄 Posts.js
+│   ├── 📄 SideBar.js
+│   ├── 📄 Stories.js
+│   ├── 📄 Suggestions.js
+│   └── 📄 User.js
+└── 📄 README.md
 
-### `npm run build`
+```
+All images (logos, avatars, and icons) are stored in public/assets/img and used across components.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📝 *Code Language*
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Component and file names are in English, while CSS class names, comments, variables, and functions are written in Portuguese for clarity and project requirements.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ✨ How to Run/View the Project
 
-### `npm run eject`
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/ClaraDev01/Projeto-Instagram-React.git
+    ```
+2. **Navigate into the project directory and install dependencies**:
+    ```bash
+    cd Projeto-Instagram-React
+    npm install
+    ```
+3. **Run the development server**:
+    ```bash
+    npm start
+    ```
+    The app will be available at `http://localhost:3000`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. **Deploying to GitHub Pages (optional):**
+    - Edit the `homepage` in `package.json`.
+    - Run:
+      ```
+      npm run build
+      npm run deploy
+      ```
+    - Access your app via the generated URL.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📌 *Future Improvements*
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- 💬 Adding comments for posts.
+- 🔔 Notifications for new interactions.
+- 📱 Responsive layout for mobile devices.
+- 👥 Multi-profile support and user authentication.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📜 *License*
 
-## Learn More
+This project is open-source, intended for educational and study purposes.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+💻 *Developed by ClaraDev01*
