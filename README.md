@@ -1,4 +1,4 @@
-# 📱Instagram React Clone⚛️ 
+# 📱⚛️Instagram React Clone
 
 This React version is an evolution of a previous static HTML/CSS Instagram clone, available at `https://github.com/ClaraDev01/Projeto-Instagram`
 It has been rewritten using React components and includes the new requirements of the current project.
